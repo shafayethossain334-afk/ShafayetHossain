@@ -122,4 +122,4 @@ function toggleMenu() {
 
 function closeMenu() {
   document.querySelector('.nav-links').classList.remove('active');
-} 
+}
