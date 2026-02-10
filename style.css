@@ -157,7 +157,7 @@ body {
 ; }
 .input-group label { display: block; margin-bottom: 8px; color: var(--text-primary); }
 .input-group input, .input-group textarea { 
-    width: 100%; background: var(--input-bg); border: 1px solid #F0F08080
+    width: 100%; background: var(--input-bg); border: 1px solid #C41E3A
 ; 
     padding: 15px; border-radius: 12px; color: var(--text-primary); 
     margin-bottom: 20px; box-sizing: border-box; font-family: inherit;
