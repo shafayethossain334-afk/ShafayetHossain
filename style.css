@@ -148,9 +148,100 @@ body {
     text-decoration: none; color: white; padding: 12px 25px; 
     border-radius: 12px; font-weight: 700; transition: 0.3s; 
 }
-.facebook { background: #1877F2; }
-.instagram { background: linear-gradient(45deg, #f09433, #bc1888); }
-.x-btn { background: #414A4C; }
+/* Shared styling for all buttons */
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+ .facebook-btn {
+    background-color: #1877f2;
+    /* Official Facebook Blue */
+}
+  
+.instagram-btn {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+    color: white;
+}
+
+.x-social-button {
+  /* This creates the grey box */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;           /* Size of the box */
+  height: 50px;          /* Size of the box */
+  background-color: #4a4d4e; /* The specific grey from your image */
+  border-radius: 14px;   /* Rounded corners */
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+/* Container for the X logo */
+.x-social-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #4a4d4e; /* The grey color from your image */
+  border-radius: 14px;      /* Rounded squircle shape */
+  text-decoration: none;
+  
+  /* Fixes for mobile responsiveness and clicking */
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+/* The X Logo itself */
+.x-logo-svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;        /* Sets the X to white */
+  pointer-events: none; /* Ensures the click goes to the link, not the image */
+}
+
+/* Hover effect for desktop */
+.x-social-button:hover {
+  background-color: #333333;
+}
+
+/* Active effect for the "click" feel */
+.x-social-button:active {
+  transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+.github-btn {
+    background : #44174E;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* This creates space between the logo and text */
+    border-radius: 8px;
+}
+
+.github-btn i {
+    font-size: 1.2rem; /* Makes the logo slightly larger */
+}
 
 /* --- FORM --- */
 .contact-box-wrapper { background: var(--box); padding: 40px; border-radius: 30px; border: 1px solid #C41E3A
